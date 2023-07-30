@@ -3,6 +3,9 @@ const app = express()
 const path = require('path');
 const port = 8008
 
+// use this folder as a root for all media
+app.use(express.static(__dirname))
+
 // pages
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'page.html'))

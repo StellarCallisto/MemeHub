@@ -1,0 +1,32 @@
+:root {
+    --bglight: #2c2c2c;
+    --bgdark: #202020;
+}
+
+* {
+    box-sizing: border-box;
+}
+body, html, h1 {
+    margin: 0;
+    color: white;
+}
+.first-content {
+    position:relative;
+    top:0;
+    left: 0;
+    height: 70vh;
+    width: 100vw;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    box-shadow: inset 0px 20px 30px -16px #000000, 
+                inset 0px -20px 30px -16px #000000;
+}
+.card {
+    min-height: 20vh;
+}
+.light {
+    background-color: var(--bglight);
+}
+.dark {
+    background-color: var(--bgdark);
+}
